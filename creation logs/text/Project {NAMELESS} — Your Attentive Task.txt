@@ -1,0 +1,34 @@
+Project: Remy — Your Attentive Task Assistant
+The Problem: We all have them: the small, repetitive tasks. "Take vitamins," "Drink water," "Stand up and stretch," "Check emails." We use to-do lists or standard reminder apps, but the notifications are passive. We swipe them away and forget them five seconds later. They're ignorable, and that's why they fail.
+
+The Solution: Remy is a new kind of productivity app that acts as a true personal assistant. It's designed to break the "swipe-and-forget" cycle by ensuring you consciously acknowledge your tasks.
+
+Instead of a passive notification, Remy uses an interactive, on-screen prompt that appears at just the right moments. It's built to be present, persistent, and smart.
+
+The Remy Experience:
+
+Intelligent Reminders: Remy doesn't just buzz at a set time. It learns your workflow and intelligently finds the perfect moment to remind you, often surfacing tasks right when you're picking up your device after a break.
+
+Active Acknowledgement: You can't just swipe Remy away. You have to make a choice. A quick swipe marks a task as "Done," while a swipe in the other direction lets you mark it as "Doing," telling the app you're on it but not finished.
+
+Your Personal Mascot: Remy, the rooster, is your accountability partner, helping you build powerful, consistent routines.
+
+Core Features:
+
+Intuitive Task Creation: Easily log your "Wakeup," "Before Bed," "Major," and "Minor" tasks.
+
+Gamified Profile: Your personal "Reward Center." Track your streaks, earn points for consistency, and watch your progress grow.
+
+Personalization: Choose your own avatar and customize the app with a variety of themes to match your style.
+
+The "Pro" Experience: Remy is free to use, but the Pro Version unlocks its full potential, transforming it from a simple reminder app into a truly smart assistant.
+
+Advanced "Focus" Mode: Remy Pro learns which apps are important to you. It will never interrupt you during deep work, gaming, or video calls.
+
+Voice & Analytics: Get advanced analytics on your productivity and set up your reminders using just your voice.
+
+Dynamic Theming: Unlock premium themes, including an automatic Day/Night mode that adapts to your environment.
+
+To make it even better, we reward our most consistent free users with special opportunities to experience the Pro version, helping you build the habit first.
+
+In short: Remy isn't just another to-do list. It's a productivity partner that actively helps you build the routines you've always wanted.

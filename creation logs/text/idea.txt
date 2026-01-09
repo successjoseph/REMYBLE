@@ -1,0 +1,167 @@
+Project: "Remy" (The Attentive Task Assistant)
+1. Core Concept & Value Proposition
+Remy is an Android task-reminder app designed to solve "task initiation friction" for repetitive daily activities.
+
+Its core value proposition is not just reminding you, but reminding you at the most effective moments. It uses a persistent, context-aware pop-up system to force a conscious decision (Done vs. Doing) from the user, turning passive notifications into an active productivity loop.
+
+Mascot: The Rooster (symbolizing punctuality and routine).
+
+2. The "Smart-Timer" Logic (The Core Hook)
+This is the "secret sauce" of the app. It's a background service (the "Remy Watcher") that runs on a smart timer (e.g., every 2 hours).
+
+Logic Flow:
+
+Timer Fires: The "Remy Watcher" wakes up.
+
+Gate 1: "Focus App" Check (Pro Feature):
+
+Is the user on a "Focus App" (e.g., VS Code, Google Docs)?
+
+YES: The Watcher stops immediately. No interruption. It will try again on the next 2-hour cycle.
+
+NO: Proceed to Gate 2.
+
+Gate 2: "Screen Status" Check:
+
+Is the device inactive (screen off/locked)?
+
+YES: The Watcher sets a flag (show_on_next_unlock = true). The moment the user unlocks the phone, the bubble pop-up appears.
+
+NO (Device is active): The bubble pop-up appears immediately.
+
+3. The Pop-up & Swipe Logic
+When the pop-up appears (either on unlock or during active use):
+
+It's a non-closable, floating bubble that expands into a task list.
+
+Swipe Right: Marks the task as "Done."
+
+Swipe Left: Marks the task as "Doing."
+
+This is a smart-snooze. The pop-up hides.
+
+A new, one-time timer starts (e.g., 1 hour).
+
+After 1 hour, a check-in pop-up appears: "Did you complete [Task Name]?"
+
+4. UI/UX Philosophy & Onboarding
+The app is split into "fun" and "functional" sections.
+
+Trust-Building: The app never uses scary default permission dialogs. It uses custom "pre-permission" screens.
+
+Example: To get "Focus App" permission, a screen appears with the Rooster mascot, a clear explanation ("To avoid interrupting you..."), and a note: "You can revoke this anytime."
+
+Interactive Tour: On first opening "Settings," an animated overlay will trigger, pointing out what each icon on the bottom bar does.
+
+5. App Structure & Feature Breakdown
+The app has a bottom navigation bar with four icons.
+
+A. 👤 Profile (The "Reward" Center)
+This is the "fun" space, designed for motivation.
+
+Avatar: User can pick a pre-made avatar.
+
+Personalization: User can set their gender/pronouns, which the app uses for motivational messages.
+
+Gamification Stats:
+
+Points: A running score for completed tasks.
+
+Logs: A simple history of completed tasks.
+
+Streaks: The app tracks "Streak Days" (>80% of tasks completed).
+
+Motivational Text: "4-day streak, you go!"
+
+B. ✅ Tasks (The "Work" Center)
+The main task management hub.
+
+Task Categories: Users create tasks under four main lists:
+
+Major Tasks
+
+Minor Tasks
+
+Wakeup Tasks
+
+Before Bed Tasks
+
+Task Creation: When creating a task, the user sets:
+
+Task Name
+
+Scheduled Time (e.g., 10:00)
+
+A "bouncy label" (the text that appears in the pop-up).
+
+C. 🎨 Themes (The "Style" Center)
+Free Themes: A selection of 3-4 basic color themes.
+
+Pro Themes:
+
+Dynamic Theme (Paid): The app auto-switches from a "Morning" (light) theme to a "Night" (dark) theme based on the time of day.
+
+Other exclusive premium themes.
+
+D. ⚙️ Settings (The "Control" Center)
+This is the "nasty" but necessary functional area.
+
+Permissions Management: Shows the status of all required permissions (e.g., "Draw over other apps," "Accessibility"). Clicking one links the user directly to the Android settings page to grant/revoke it.
+
+Disclaimer: A clear note that "Remy Watcher may not function properly if permissions are turned off."
+
+Account: Change email, password, delete account.
+
+Focus App List (Pro Feature): The user can select which apps are "safe" from interruptions.
+
+6. The "Freemium" Business Model
+The app is built to be usable for free, but significantly better when paid.
+
+🎁 Free Version
+✅ Unlimited Tasks & Categories
+
+✅ Core Pop-up Logic (the "bubble")
+
+✅ Gamification (Streaks, Points)
+
+✅ Basic Themes
+
+❌ No "Focus App" Feature. (This is the critical "annoyance" that drives upgrades. Pop-ups will appear even if you're working or gaming).
+
+❌ No Task Tracking/Analytics.
+
+❌ No Voice Setup.
+
+❌ No Dynamic or Premium Themes.
+
+👑 Pro Version (Paid)
+This unlocks the "smart" and "convenience" features.
+
+✅ Smart "Focus" Mode: The ability to select "Focus Apps" so Remy never interrupts your workflow.
+
+✅ Advanced Task Tracking: A dedicated section to see your completion history, charts, and logs over time.
+
+✅ Voice Setup: Use your voice to create reminders.
+
+✅ Dynamic Day/Night Theme.
+
+✅ All Premium Themes.
+
+🎮 The Gamified Pro Trial (The "Hook")
+This system converts free users by rewarding their consistency with a taste of Pro.
+
+Threshold: User must have a minimum number of tasks (e.g., 5+) set daily.
+
+Trigger: Achieve >80% task completion for a set number of days.
+
+Reward: A free trial of the Pro version.
+
+Milestone Ladder:
+
+Milestone 1: 10 days of >80% completion -> 1 Day Pro Trial.
+
+Milestone 2: 25 days of >80% completion -> 2.5 Day Pro Trial.
+
+Milestone 3: 45 days of >80% completion -> 3 Day Pro Trial (Max Cap).
+
+Milestone 4: 60 days... -> 3 Day Pro Trial (Max Cap).
